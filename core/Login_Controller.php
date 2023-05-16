@@ -7,13 +7,12 @@ class Login_Controller extends Database
     private $username;
     private $password;
 
-    public function Login()
+    public static function Login()
     {
-        if ($this->Is_logged_in())
+        if (!empty($_POST['login']))
         {
-            return true;
+            return "aaaah";
         }
-        return false;
     }
 
     public function Logout()
@@ -26,9 +25,4 @@ class Login_Controller extends Database
 
     }
 
-    public function __construct()
-    {
-        $username = $this->username;
-        $password = $this->password;
-    }
 }

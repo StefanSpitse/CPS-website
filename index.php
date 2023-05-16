@@ -1,10 +1,16 @@
 <?php
 include "./core/Bootstraps.php";
+session_start();
+
 $php = new \bootstrap\Bootstraps("core");
 $php->includes();
+
 $css = new \bootstrap\Bootstraps("css", "css");
+
 $navbar = Generate_navbar();
-session_start();
+
+
+
 ?>
 
 <html>
@@ -23,5 +29,6 @@ session_start();
     <?= $navbar ?>
     <?= Controller()?>
     <?= login_form();?>
+    <?= \database\Login_Controller::Login();?>
 </body>
 </html>
