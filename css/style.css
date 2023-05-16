@@ -1,0 +1,17 @@
+html { height: 100%;}
+body { color: white; height: 100%}
+
+.primary {
+    background: purple;
+    color: white;
+}
+
+.nav-bar {
+    background-color: #1d2124;
+    color: white;
+}
+
+a:hover {
+    color:white;
+    text-decoration: none;
+}
