@@ -7,11 +7,12 @@ class Login_Controller extends Database
     private $username;
     private $password;
 
-    public static function Login()
+    public function Login()
     {
         if (!empty($_POST['login']))
         {
-            return "aaaah";
+          $request = $this->Query("SELECT * FROM `users` WHERE username='". $_POST['username'] ."';");
+          print_r($request);
         }
     }
 
