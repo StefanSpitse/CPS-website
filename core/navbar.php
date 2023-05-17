@@ -9,11 +9,9 @@ function Generate_navbar()
             <button class="btn primary mr-auto"><a href="index.php?controller=cps" class="text-light">CPS Test</a></button>
             <button class="btn primary mr-auto"><a href="index.php?controller=leaderboard" class="text-light">Leaderboard</a></button>
         </div>
-        <div>
+        <div class="p-2">
             '.
-
                 $_SESSION['username']
-
             .'
         </div>
         <button class="btn primary" type="button" data-toggle="modal" data-target="#login">
