@@ -9,7 +9,7 @@ $css = new \bootstrap\Bootstraps("css", "css");
 
 $navbar = Generate_navbar();
 
-
+$login = new \database\Login_Controller()
 
 ?>
 
@@ -26,9 +26,11 @@ $navbar = Generate_navbar();
     <?= $css->link() ?>
 </head>
 <body class="bg-dark">
+
     <?= $navbar ?>
+
     <?= Controller()?>
-    <?= login_form();?>
-    <?= \database\Login_Controller::Login();?>
+    <?= login_form()?>
+    <?php $login->Login()?>
 </body>
 </html>
