@@ -8,7 +8,7 @@ class Database
     }
 
 
-    protected function Query($sql)
+    public function Query($sql)
     {
         $db = $this->Connect_db();
         return $db->query($sql);
