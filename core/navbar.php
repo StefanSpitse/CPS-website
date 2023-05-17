@@ -1,6 +1,10 @@
 <?php
 function Generate_navbar()
 {
+    if (!isset($_SESSION['username']))
+    {
+        $_SESSION['username'] = "";
+    }
 
     return '
     <nav class="navbar navbar-expand-sm nav-bar navbar-dark justify-content-center mb-2">
@@ -22,8 +26,7 @@ function Generate_navbar()
         </button>
         </li>
     </ul>
-</div>
-        
-    </nav>
+    </div>    
+</nav>
     ';
 }
